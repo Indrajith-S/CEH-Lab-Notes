@@ -1,0 +1,8 @@
+- HOIC (High Orbit Ion Cannon) is a network stress and DoS/DDoS attack application. This tool is written in the BASIC language. It is designed to attack up to 256 target URLs simultaneously. It sends HTTP, POST, and GET requests to a computer that uses lulz inspired GUIs. It offers a high-speed multi-threaded HTTP Flood; a built-in scripting system allows the deployment of “boosters,” which are scripts designed to thwart DDoS countermeasures and increase DoS output.
+- Navigate to **DoS and DDoS Attack Tools**/**High Orbit Ion Cannon (HOIC)** and double-click **hoic2.1.exe**.
+- The **HOIC** GUI main window appears; click the “**+**” button below the **TARGETS** section.
+- The **HOIC - [Target]** pop-up appears. Type the target URL such as **http://[Target IP Address]** (here, the target IP address is **10.10.10.13 [Parrot Security]**) in the URL field. Slide the **Power** bar to **High**. Under the **Booster** section, select **GenericBoost.hoic** from the drop-down list, and click **Add**.
+- Set the **THREADS** value to **20** by clicking the **>** button until the value is reached.
+- Now do the same with 2 or 3 other machines so as to flood target with multiple machines.
+- Once **HOIC** is configured on all machines, switch to each machine and click the **FIRE TEH LAZER!** button to initiate the DDoS attack on the target machine.
+- Observe that the **Status** changes from **READY** to **ENGAGING**.

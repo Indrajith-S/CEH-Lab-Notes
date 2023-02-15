@@ -1,0 +1,18 @@
+- Wireshark is a network packet analyzer used to capture network packets and display packet data in detail. The tool uses Winpcap to capture packets on its own supported networks. It captures live network traffic from Ethernet, IEEE 802.11, PPP/HDLC, ATM, Bluetooth, USB, Token Ring, Frame Relay, and FDDI networks. The captured files can be programmatically edited via the command-line. A set of filters for customized data displays can be refined using a display filter.
+
+- Now here we try to capture packets on a remote interface using wireshark.
+	- In real-time, when attackers gain the credentials of a victim’s machine, they attempt to capture its remote interface and monitor the traffic its user browses to reveal confidential user information.
+- Establish a remote desktop connection to the target machine. 
+- In the target machine, go to control panel.
+- Navigate to **System and Security --> Administrative Tools**. In the **Administrative Tools** control panel, double-click **Services**.
+- The **Services** window appears. Choose **Remote Packet Capture Protocol v.0 (experimental)**, right-click the service, and click **Start**.
+- Now close the remote desktop connection and open wireshark.
+- The **Wireshark Network Analyzer** window appears; click the **Capture options** icon from the toolbar.
+- The **Wireshark**. **Capture Interfaces** window appears; click the **Manage Interfaces…** button.
+- The **Manage Interfaces** window appears; click the **Remote Interfaces** tab, and then the **Add a remote host and its interface** icon (**+**).
+- The **Remote Interface** window appears. In the **Host** text field, enter the IP address of the target machine (here, **10.10.10.10**); and in the **Port** field, enter the port number as **2002**.
+- Under the **Authentication** section, select the **Password authentication** radio button and enter the target machine’s user credentials (here, **Jason** and **qwerty**); click **OK**.
+- A new remote interface is added to the **Manage Interfaces** window; click **OK**.
+- The newly added remote interface appears in the **Wireshark**. **Capture Interfaces** window; click **Start**.
+- Now any activity on the target machine can be noticed in wireshark here.
+- You can see the websites browsed by the victim on the target system in the **Info** section.

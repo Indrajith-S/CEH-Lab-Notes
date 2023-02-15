@@ -1,0 +1,13 @@
+- Web application hacking is the exploitation of applications via HTTP by manipulating the application logics via an application’s graphical web interface, tampering with the uniform resource identifier (URI) or HTTP elements not contained in the URI. Methods for hacking web applications, including SQL injection attacks, cross-site scripting (XSS), cross-site request forgeries (CSRF), and insecure communications.
+- The objective of the lab is to perform web application hacking and other tasks that include, but are not limited to:
+
+	- Footprinting a web application using various information-gathering tools
+	- Performing web spidering, detect load balancers, and identify web server directories
+	- Performing web application vulnerability scanning
+	- Performing brute-force and cross-site request forgery (CSRF) attack
+	- Exploiting parameter tampering and cross-site scripting (XSS) vulnerabilities
+	- Exploiting WordPress plugin vulnerabilities
+	- Exploiting remote command execution vulnerability
+	- Exploiting file upload vulnerability
+	- Gaining backdoor access via a web shell
+	- Detecting web application vulnerabilities using various web application security tools

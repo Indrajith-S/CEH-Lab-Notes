@@ -1,0 +1,13 @@
+- HoneyBOT is a medium interaction honeypot for windows. A honeypot creates a safe environment to capture and interact with unsolicited traffic on a network. HoneyBOT is an easy-to-use solution that is ideal for network security research or as part of an early-warning IDS.
+
+- Here, we will use the HoneyBOT tool to detect malicious network traffic.
+- Navigate to **Honeypot Tools\HoneyBOT**. Double-click **HoneyBOT_018.exe** to launch the HoneyBOT installer. Follow the wizard-driven steps to install HoneyBOT.
+- Now, click the **Start** icon from the left-bottom of **Desktop**. Under **Recently added** applications, right-click **HoneyBOT** --> **More** --> **Run as administrator.
+- The HoneyBOT **Options** window appears with default options checked on the **General** settings tab. Leave the default settings or modify them accordingly.
+- On the **Exports** tab, in which you can export the logs recorded by HoneyBOT, choose the required option to view the reports, and then proceed to the next step. (here, **Export Logs to CSV** and **Upload Logs to Server** checkbox are selected)
+- Now any sort of request from any attacker can be viewed here in HoneyBOT.
+- expand the Ports and Remotes nodes to expands the ports accessed and the ip from which it came from.
+- Then right click the ip address on the right pane and click on view details to view the complete details of the request or attack recorded by HoneyBOT.
+- The **Packet Log** window appears. This displays the complete log details of the request captured by HoneyBOT.
+- Under **Connection Details**, you can view the **Date** and **Time** of the connection established as well as the protocol used.
+- **Connection Details** also shows the **Source IP**, **Port**, and **Server Port**.

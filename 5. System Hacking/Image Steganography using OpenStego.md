@@ -1,0 +1,25 @@
+- Images are popular cover objects used for steganography. In image steganography, the user hides the information in image files of different formats such as .PNG, .JPG, or .BMP.
+
+- OpenStego is an image steganography tool that hides data inside images. It is a Java-based application that supports password-based encryption of data for an additional layer of security. It uses the DES algorithm for data encryption, in conjunction with MD5 hashing to derive the DES key from the password provided.
+- Navigate to **Steganography Tools\Image Steganography Tools\OpenStego** and double-click **Setup-OpenStego-0.7.3.exe**.
+- Click **Run OpenStego** from the applications list to launch **OpenStego**.
+- Click the **ellipsis** button (3 dots) next to the **Message File** section.
+- The **Open - Select Message File** window appears. Navigate to **Z:\CEHv11 Module 06 System Hacking\Steganography Tools\Image Steganography Tools\OpenStego**, select **New Text Document.txt**, and click **Open**. Assume the text file contains sensitive information such as credit card and pin numbers.
+- The location of the selected file appears in the **Message File** field.
+- Click the **ellipsis** button next to **Cover File**.
+- The **Open - Select Cover File** window appears. Navigate to **Z:\CEHv11 Module 06 System Hacking\Steganography Tools\Image Steganography Tools\OpenStego**, select **Island.jpg**, and click **Open**.
+- Now, both **Message File** and **Cover File** are uploaded. By performing steganography, the message file will be hidden in the designated cover file.
+- Click the **ellipsis** button next to **Output Stego File**.
+- The **Save - Select Output Stego File** window appears. Choose the location where you want to save the file. In this lab, the location chosen is **Desktop**.
+- Provide the file name **Stego** and click **Open**.
+- In the **OpenStego** window, click the **Hide Data** button.
+- Minimize the **OpenStego** window. The image containing the secret message appears on **Desktop**. Double-click the image file (**Stego.bmp**) to view it.
+- You will see the image, but not the contents of the message (text file) embedded in it
+- Close the **Photos** viewer window, switch to the **OpenStego** window, and click **Extract Data** in the left-pane.
+- Click the **ellipsis** button next to **Input Stego File**.
+- The **Open - Select Input Stego File** window appears. Navigate to **Desktop**, select **Stego.bmp**, and click **Open**.
+- Click the **ellipsis** button next to **Output Folder for Message File**.
+- The **Select Output Folder for Message File** window appears. Choose a location to save the message file (here, **Desktop**) and click **Open**.
+- In the **OpenStego** window, click the **Extract Data** button. This will extract the message file from the image and save it to **Desktop**.
+- The extracted image file (**New Text Document.txt**) is displayed on **Desktop**. Close the **OpenStego** window, navigate to **Desktop**, and double-click **New Text Document.txt**. The file displays all the information contained in the text document.
+	- In real-time, an attacker might scan for images that contain hidden information and use steganography tools to decrypt their hidden information.

@@ -1,0 +1,5 @@
+- Session hijacking allows an attacker to take over an active session by bypassing the authentication process. It involves stealing or guessing a victim’s valid session ID, which the server uses to identify authenticated users, and using it to establish a connection with the server. The server responds to the attacker’s requests as though it were communicating with an authenticated user, after which the attacker is able to perform any action on that system.
+
+- Attackers can use session hijacking to launch various kinds of attacks such as man-in-the-middle (MITM) and Denial-of-Service (DoS) attacks. A MITM attack occurs when an attacker places himself/herself between the authorized client and the server to intercept information flowing in either direction. A DoS attack happens when attackers sniff sensitive information and use it to make host or network resource unavailable to users, usually by flooding the target with requests until the system is overloaded.
+
+- As a professional ethical hacker or penetration tester, you must possess the required knowledge to hijack sessions in order to test the systems in the target network.

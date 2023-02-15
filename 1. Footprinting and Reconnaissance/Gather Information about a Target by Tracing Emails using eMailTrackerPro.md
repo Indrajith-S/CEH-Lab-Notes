@@ -1,0 +1,9 @@
+- Using eMailTrackerPro 
+- To trace email headers, click the **My Trace Reports** icon from the **View** section. (here, you will see the output report of the traced email header).
+- Click the **Trace Headers** icon from the **New Email Trace** section to start the trace.
+- A pop-up window will appear; select **Trace an email I have received**. Copy the email header from the suspicious email you wish to trace and paste it in the **Email headers**: field under **Enter Details** section.
+- In **Gmail**, find the email header by following the steps:
+	- Open an email; click the dots (**More**) icon arrow next to the **Reply** icon at the top-right corner of the message pane.
+	- Select **Show original** from the list.
+	- The **Original Message** window appears in a new browser tab with all the details about the email, including the email header.
+- Click the **View Report** button above **Map** to view the complete trace report.

@@ -1,0 +1,9 @@
+- LOIC (Low Orbit Ion Cannon) is a network stress testing and DoS attack application. We can also call it an application-based DOS attack as it mostly targets web applications. We can use LOIC on a target site to flood the server with TCP packets, UDP packets, or HTTP requests with the intention of disrupting the service of a particular host.
+- Navigate to **DoS and DDoS Attack Tools\Low Orbit Ion Cannon (LOIC)** and double-click **LOIC.exe**.
+- The **Low Orbit Ion Cannon** main window appears.
+- Perform the following settings:
+	- Under the **Select your target** section, type the target IP address under the **IP** field (here, **10.10.10.13**), and then click the **Lock on** button to add the target devices.
+	- Under the **Attack options** section, select **UDP** from the drop-down list in **Method**. Set the thread's value to **10** under the **Threads** field. Slide the power bar to the middle.
+- Now do the same with 2 or 3 other machines so as to flood or attack the target with multiple machines.
+- Once **LOIC** is configured on all machines, switch to each machine and click the **IMMA CHARGIN MAH LAZER** button under the **Ready?** section to initiate the DDoS attack on the target machine.
+- Leave the machine intact for 5–10 minutes, and then open it again. You will observe that the performance of the machine is slightly affected and that its response is slowing down.

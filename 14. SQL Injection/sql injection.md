@@ -1,0 +1,4 @@
+- SQL injection attacks can be performed using various techniques to view, manipulate, insert, and delete data from an application’s database. There are three main types of SQL injection:
+	- **In-band SQL injection**: An attacker uses the same communication channel to perform the attack and retrieve the results
+	- **Blind/inferential SQL injection**: An attacker has no error messages from the system with which to work, but rather simply sends a malicious SQL query to the database    
+	- **Out-of-band SQL injection**: An attacker uses different communication channels (such as database email functionality, or file writing and loading functions) to perform the attack and obtain the results

@@ -1,0 +1,4 @@
+- Using Netcraft
+	- Click the **Resources** tab from the menu bar and click on the **Site Report** link under the Tools section.
+	- Type the target website’s URL to extract information associated with the organizational website such as infrastructure, technology used, sub domains, background, network, etc.
+	- In the **Network** section, click on the website link in the **Domain** field to view the subdomains.

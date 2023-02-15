@@ -1,0 +1,41 @@
+- ARP poisoning involves forging many ARP request and reply packets to overload a switch. ARP cache poisoning is the method of attacking a LAN network by updating the target computer’s ARP cache with both forged ARP request and reply packets designed to change the Layer 2 Ethernet MAC address (that of the network card) to one that the attacker can monitor. Attackers use ARP poisoning to sniff on the target network. Attackers can thus steal sensitive information, prevent network and web access, and perform DoS and MITM attacks.
+
+- The ethical hacker and pen tester must assess the organization or target of evaluation for ARP poisoning vulnerabilities.
+- Here, we will detect ARP poisoning in a switch-based network.
+- Open Cain & Abel
+	- Click **Configure** from the menu bar to configure an ethernet card.
+	- The **Configuration Dialog** window appears. The **Sniffer** tab is selected by default. Ensure that the **Adapter** associated with the **IP address** of the machine is selected and click **OK**.
+	- Click the **Start/Stop Sniffer** icon on the toolbar to begin sniffing.
+	- Now, click the **Sniffer** tab.
+	- Click the plus (**+**) icon or right-click in the window and select **Scan MAC Addresses** to scan the network for hosts.
+	- The **MAC Address Scanner** window appears. Check **the Range** radio button and specify the IP address range as **10.10.10.1-10.10.10.30**. Select the **All Tests** checkbox; then, click **OK**.
+	- Cain & Abel starts scanning for MAC addresses and lists all those found.
+	- After the completion of the scan, a list of all active IP addresses along with their corresponding MAC addresses is displayed.
+	- Now, click the **APR** tab at the bottom of the window.
+	- APR options appear in the left-hand pane. Click anywhere on the topmost section in the right-hand pane to activate the plus (**+**) icon.
+	- Click the plus (**+**) icon; a **New ARP Poison Routing** window appears; from which we can add IPs to listen to traffic.
+	- To monitor the traffic between two systems (here, **Windows 10** and **Parrot Security**), from the left-hand pane, click to select **10.10.10.10** (**Windows 10**) and from the right-hand pane, click **10.10.10.13** (**Parrot Security**); click **OK**. By doing so, you are setting Cain to perform ARP poisoning between the first and second targets.
+	- Click to select the created target IP address scan that is displayed in the **Configuration / Routed** **Packets** tab.
+	- Click on the **Start/Stop** APR icon to start capturing ARP packets.
+	- After clicking on the **Start/Stop APR** icon, Cain & Abel starts ARP **poisoning** and the status of the scan changes to Poisoning.
+	- Cain & Abel intercepts the traffic traversing between these two machines.
+	- To generate traffic between the machines, you need to ping one target machine using the other.
+	- Open Terminal
+		>hping3 #targetip -c 100000 (1.  > **-c**: specifies the packet count.)
+		- This command will start pinging the target machine (**Windows 10**) with 100,000 packets.
+	- Now back to the host machine
+	- The **Wireshark Network Analyzer** window appears; click **Edit** in the menu bar and select **Preferences…**.
+	- The **Wireshark . Preferences** window appears; expand the **Protocols** node.
+	- Scroll-down in the **Protocols** node and select the **ARP/RARP** option.
+	- From the right-hand pane, click the **Detect ARP request storms** checkbox and ensure that the **Detect duplicate IP address configuration** checkbox is checked; click **OK**.
+	- Now, double-click on the adapter associated with your network (here, **Ethernet**) to start capturing the network packets.
+	- **Wireshark** begins to capture the traffic between the two machines.
+	- Switch to the **Cain & Abel** window to observe the packets flowing between the two machines.
+	- Now, switch to **Wireshark** and click the **Stop packet capturing** icon to stop the packet capturing.
+	- Click **Analyze** from the menu bar and select **Expert Information** from the drop-down options.
+	- The **Wireshark . Expert Information** window appears; click to expand the **Warning** node labeled **Duplicate IP address configured (10.10.10.13)**, running on the **ARP/RARP** protocol.
+	- Arrange the **Wireshark . Expert Information** window above the **Wireshark** window so that you can view the packet number and the **Packet details** section.
+	- In the **Wireshark . Expert Information** window, click any packet (here, **216**).
+	- On selecting the packet number, **Wireshark** highlights the packet, and its associated information is displayed under the packet details section. Close the **Wireshark . Expert Information** window.
+	- The warnings highlighted in yellow indicate that duplicate IP addresses have been detected at one MAC address.
+		- *ARP spoofing succeeds by changing the IP address of the attacker’s computer to the IP address of the target computer. A forged ARP request and reply packet find a place in the target ARP cache in this process. As the ARP reply has been forged, the destination computer (target) sends frames to the attacker’s computer, where the attacker can modify the frames before sending them to the source machine (User A) in an MITM attack. At this point, the attacker can launch a DoS attack by associating a non-existent MAC address with the IP address of the gateway or may passively sniff the traffic, and then forward it to the target destination.*

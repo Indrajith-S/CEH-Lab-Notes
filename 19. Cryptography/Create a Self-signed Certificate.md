@@ -1,0 +1,21 @@
+- As a professional ethical hacker and penetration tester, you must possess a proper knowledge of creating this certificate as it validates the public key contained within the certificate belonging to the person, company, server, or other entity mentioned. The labs in this exercise demonstrate the creation of a self-signed certificate.
+- Self-signed certificates are widely used for testing servers. In self-signed certificates, a user creates a pair of public and private keys using a certificate creation tool such as Adobe Acrobat Reader, Java’s keytool, Apple’s Keychain, etc. and signs the document with the public key. The recipient requests the private key from the sender in order to verify the certificate. However, certificate verification rarely occurs due to the necessity of disclosing the private key: this makes self-signed certificates useful only in a self-controlled testing environment.
+- Before you start this task, you will need to check with your local sites whether they include a self-signed certificate.
+- Launch any web browser (here, **Google Chrome**), place the cursor in the address bar and click on https://www.goodshopping.com, and press **Enter**.
+- As you are using an https channel to browse the website, it displays a page stating that **This site can’t be reached**.
+- As the site does not have a self-signed certificate, it displays a connection refused message. Close the web browser.
+- Open the **Internet Information Services (IIS) Manager**; click the machine name (**SERVER2019 (SERVER2019\Administrator**)) under the **Connections** section from the left-hand pane.
+- In **SERVER2019 Home**, double-click **Server Certificates** in the **IIS** section.
+- The **Server Certificates** wizard appears; click **Create Self-Signed Certificate…** from the right-hand pane in the **Actions** section.
+- The **Create Self-Signed Certificate** window appears; type **GoodShopping** in the **Specify a friendly name for the certificate** field. Ensure that the **Personal** option is selected in the **Select a certificate store for the new certificate** field; then, click **OK**.
+- A newly created self-signed certificate will be displayed in the **Server Certificates** pane.
+- Expand the **Sites** node from the left-hand pane, and select **GoodShopping** from the available sites. Click **Bindings…** from the right-hand pane in the **Actions** section.
+- The **Site Bindings** window appears; click **Add…**.
+	- The **Add Site Binding** window appears; choose **https** from the **Type** field drop-down list. Once you choose the https type, the port number in the **Port** field automatically changes to **443** (the channel on which HTTPS runs).
+	- Choose the **IP address** on which the site is hosted (here, **10.10.10.19**).
+	- Under the **Host name** field, type **www.goodshopping.com**. Under the **SSL certificate** field, select **GoodShopping** from the drop-down list, and click **OK**.
+	- The newly created SSL certificate is added to the **Site Bindings** window; then, click **Close**.
+- Now, right-click the name of the site for which you have created the self-signed certificate (here, **GoodShopping**) and click **Refresh** from the context menu.
+- Open the **Google Chrome** browser place the cursor in the address bar and click on https://www.goodshopping.com, and press **Enter**.
+- The **Your connection is not private** message appears, click **ADVANCED** to proceed.
+- Now you can see **Goodshopping webpage** with **ssl certificate** assigned to it.

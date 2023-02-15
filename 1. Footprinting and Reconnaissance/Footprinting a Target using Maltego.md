@@ -1,0 +1,18 @@
+- Using Maltego
+- Go to Applications in linux system
+- Pentesting --> Information Gathering --> OSINT Analysis --> maltego
+- In the left-pane of **Maltego GUI**, you can find the **Entity Palette** box, which contains a list of default built-in transforms. In the **Infrastructure** node under **Entity Palette**, observe a list of entities such as **AS**, **DNS Name**, **Domain**, **IPv4 Address**, **URL**, **Website**, etc.
+- Drag the **Website** entity onto the **New Graph (1)** window.
+- The entity appears on the new graph, with the **www.paterva.com** URL selected by default.
+- Double-click the name **www.paterva.com** and change the domain name to **www.certifiedhacker.com** press Enter.
+- Right-click the entity and select **All Transforms**.
+- The **Run Transform(s)** list appears; click **To Domains [DNS]**.
+- Right-click the **certifiedhacker.com** entity and select **All Transforms** ---> **To DNS Name [Using Name Schema diction…]**.
+- Observe the status in the progress bar. This transform will attempt to test various name schemas against a domain and try to identify a specific name schema for the domain.
+- After identifying the name schema, attackers attempt to simulate various exploitation techniques to gain sensitive information related to the resultant name schemas. For example, an attacker may implement a brute-force or dictionary attack to log in to **ftp.certifiedhacker.com** and gain confidential information.
+- Right-click the **certifiedhacker.com** entity and select **All Transforms** --> **To DNS Name - SOA (Start of Authority)**.
+- This returns the primary name server and the email of the domain administrator.
+- By extracting the SOA related information, attackers attempt to find vulnerabilities in their services and architectures and exploit them.
+
+- Apart from the aforementioned methods, you can perform footprinting on the critical employee from the target organization to gather additional personal information such as email addresses, phone numbers, personal information, image, alias, phrase, etc.
+- In the left-pane of the Maltego GUI, click the **Personal** node under **Entity Palette** to observe a list of entities such as **Email Address**, **Phone Numbers**, **Image**, **Alias**, **Phrase**, etc.

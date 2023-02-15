@@ -1,0 +1,5 @@
+- In wireless networks, communication takes place through radio wave transmission, which usually takes place at the physical layer of the network structure. Thanks to the wireless communication revolution, fundamental changes to data networking and telecommunication are taking place. This means that you will need to know and understand several types of wireless networks. These include:
+	- **Extension to a wired network**: A wired network is extended by the introduction of access points between the wired network and wireless devices
+	- **Multiple access points**: Multiple access points connect computers wirelessly
+	- **LAN-to-LAN wireless network**: All hardware APs have the ability to interconnect with other hardware access points
+	- **3G/4G hotspot**: A mobile device shares its cellular data wirelessly with Wi-Fi-enabled devices such as MP3 players, notebooks, tablets, cameras, PDAs, and netbooks

@@ -1,0 +1,16 @@
+- Using l0phtCrack
+	- In the next wizard, click the **Password Auditing Wizard** button.
+	- The **LC7 Password Auditing Wizard** window appears; click **Next**.
+	- In the **Choose Target System Type** wizard, ensure that the **Windows** radio button is selected and click **Next**.
+	- In the **Windows Import** wizard, select the **A remote machine** radio button and click **Next**.
+	- In the **Windows Import From Remote Machine (SMB)** wizard, type in the below details:
+		- **Host**: **10.10.10.16** (IP address of the remote machine [**Windows Server 2016**])
+		- Select the **Use Specific User Credentials** radio button. In the **Credentials** section, type the login credentials of the **Windows Server 2016** machine (Username: **Administrator**; Password: **Pa$$w0rd**).
+		- If the machine is under a domain, enter the domain name in the **Domain** section. Here, **Windows Server 2016** belongs to the **CEH.com** domain.
+
+	- In the **Choose Audit Type** wizard, select the **Thorough Password Audit** radio button and click **Next**.
+	- In the **Reporting Options** wizard, select the **Generate Report at End of Auditing** option and ensure that the **CSV** report type radio button is selected. Click the **Browse…** button to store the report in the desired location.
+	- The **Job Scheduling** wizard appears. Ensure that the **Run this job immediately** radio button is selected and click **Next**.
+	- Check the given details in the **Summary** wizard and click **Finish**.
+	- **L0phtCrack** starts cracking the passwords of the remote machine. In the lower-right corner of the window, you can see the status.
+	- 

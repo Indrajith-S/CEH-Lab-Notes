@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "5e0c07ccaba95217",
+    "type": "split",
+    "children": [
+      {
+        "id": "aff843121c1f9eff",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "1. Footprinting and Reconnaissance/Perform Network Tracerouting in Windows and Linux Machines.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b751f7504ffbf6f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7588e77492505c81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad373a8a6f24fc76",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "015189c626c3013b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 476.5
+  },
+  "right": {
+    "id": "e267c806ec8b3dcd",
+    "type": "split",
+    "children": [
+      {
+        "id": "98d5f0fef850b1a8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2c01c2320a89078",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1. Footprinting and Reconnaissance/Perform Network Tracerouting in Windows and Linux Machines.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "aff843121c1f9eff",
+  "lastOpenFiles": [
+    "1. Footprinting and Reconnaissance/Footprinting a Target using Recon-ng.md",
+    "14. SQL Injection/Perform SQL Injection Attacks.md",
+    "14. SQL Injection/Detect SQL Injection Vulnerabilities using Various SQL Injection Detection Tools.md",
+    "14. SQL Injection/sql injection.md",
+    "1. Footprinting and Reconnaissance/Gather Information using Advanced Google Hacking Techniques.md",
+    "7. Sniffing/Perform ARP Poisoning using arpspoof.md",
+    "7. Sniffing/Detect ARP Poisoning in a Switch-Based Network.md",
+    "7. Sniffing/ARP.md",
+    "7. Sniffing/Perform an Man-in-the-Middle (MITM) Attack using Cain & Abel.md",
+    "2. Scanning Networks/Create Custom UDP and TCP Packets using Hping3 to Scan beyond IDS or Firewall.md"
+  ]
+}
