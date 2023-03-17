@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "19. Cryptography/Encrypt the Information using Various Cryptography Tools.md",
+                "file": "2. Scanning Networks/Perform OS Discovery.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "19. Cryptography/Encrypt the Information using Various Cryptography Tools.md",
+                "file": "2. Scanning Networks/Perform OS Discovery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,15 +106,15 @@
   },
   "active": "401b4c2e083677cb",
   "lastOpenFiles": [
+    "2. Scanning Networks/Perform Port and Service Discovery using MegaPing.md",
+    "2. Scanning Networks/Perform Host Discovery using Nmap.md",
+    "19. Cryptography/Encrypt the Information using Various Cryptography Tools.md",
     "5. System Hacking/Perform Buffer Overflow Attack to Gain Access to a Remote System.md",
     "5. System Hacking/Covert Channels using Covert_TCP.md",
     "5. System Hacking/Image Steganography using OpenStego.md",
     "5. System Hacking/Hide Data using White Space Steganography.md",
     "5. System Hacking/Hide Files using NTFS Streams.md",
     "12. Hacking Web Services/Information Gathering using Ghost Eye.md",
-    "1. Footprinting and Reconnaissance/Footprinting a Target using BillCipher.md",
-    "13. Hacking Web Applications/Perform Parameter Tampering using Burp Suite.md",
-    "7. Sniffing/ARP.md",
-    "2. Scanning Networks/Create Custom UDP and TCP Packets using Hping3 to Scan beyond IDS or Firewall.md"
+    "1. Footprinting and Reconnaissance/Footprinting a Target using BillCipher.md"
   ]
 }
